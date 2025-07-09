@@ -7,11 +7,11 @@
 // Constants
 const GRAMS_PER_KILOGRAM = 1000;
 
-// US/UK pounds & ounces (même valeur dans les 2 systèmes)
-const KILOGRAMS_PER_POUND = 0.45359237;
-const GRAMS_PER_POUND = KILOGRAMS_PER_POUND * GRAMS_PER_KILOGRAM;
-const GRAMS_PER_OUNCE = GRAMS_PER_POUND / 16;
-const KILOGRAMS_PER_OUNCE = KILOGRAMS_PER_POUND / 16;
+// US/UK pounds & ounces (same in both systems)
+const GRAMS_PER_POUND = 453.59237;
+const POUNDS_PER_KILOGRAM = 2.20462262185;
+const GRAMS_PER_OUNCE = 28.349523125;
+const OUNCES_PER_KILOGRAM = 35.27396195;
 
 /** Metric conversions */
 export function kilogramsToGrams(kg: number): number {
@@ -24,11 +24,11 @@ export function gramsToKilograms(g: number): number {
 
 /** Metric ↔ Pounds */
 export function kilogramsToPounds(kg: number): number {
-  return kg / KILOGRAMS_PER_POUND;
+  return kg * POUNDS_PER_KILOGRAM;
 }
 
 export function poundsToKilograms(lb: number): number {
-  return lb * KILOGRAMS_PER_POUND;
+  return lb / POUNDS_PER_KILOGRAM;
 }
 
 export function gramsToPounds(g: number): number {
@@ -41,11 +41,11 @@ export function poundsToGrams(lb: number): number {
 
 /** Metric ↔ Ounces */
 export function kilogramsToOunces(kg: number): number {
-  return kg / KILOGRAMS_PER_OUNCE;
+  return kg * OUNCES_PER_KILOGRAM;
 }
 
 export function ouncesToKilograms(oz: number): number {
-  return oz * KILOGRAMS_PER_OUNCE;
+  return oz / OUNCES_PER_KILOGRAM;
 }
 
 export function gramsToOunces(g: number): number {
