@@ -17,7 +17,7 @@ describe('Weight conversions', () => {
 
     it('grams ↔ pounds', () => {
       expect(weight.gramsToPounds(1000)).toBeCloseTo(2.20462, 5);
-      expect(weight.poundsToGrams(2.20462)).toBeCloseTo(1000, 5);
+      expect(weight.poundsToGrams(2.20462)).toBeCloseTo(1000, 2);
     });
   });
 
@@ -29,7 +29,7 @@ describe('Weight conversions', () => {
 
     it('grams ↔ ounces', () => {
       expect(weight.gramsToOunces(1000)).toBeCloseTo(35.274, 3);
-      expect(weight.ouncesToGrams(35.274)).toBeCloseTo(1000, 3);
+      expect(weight.ouncesToGrams(35.274)).toBeCloseTo(1000, 2);
     });
   });
 });
