@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "declaration": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
     "outDir": "dist",
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "esModuleInterop": true
+    "skipLibCheck": true
   },
-  "include": ["src", "tests/weight.test.ts", "tests/volume.test.ts", "tests/length.test.ts", "tests/currency.test.ts"]
-}
+  "include": ["src", "tests/weight.test.ts", "tests/volume.test.ts", "tests/length.test.ts", "tests/currency.test.ts"]}
