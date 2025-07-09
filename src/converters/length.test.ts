@@ -4,7 +4,8 @@ import {
   kilometersToMiles, milesToKilometers, 
   yardsToMeters, metersToYards,
   yardsToFeet, feetToYards,
-  kilometersToYards, yardsToKilometers 
+  kilometersToYards, yardsToKilometers ,
+  kilometersToFeet, feetToKilometers
 } from './length';
 
 describe('feet and meters', () => {
@@ -76,6 +77,20 @@ describe('kilometers and yards', () => {
     expect(yardsToKilometers(1093.61)).toBeCloseTo(1);
     expect(yardsToKilometers(5468.05)).toBeCloseTo(5);
     expect(yardsToKilometers(0)).toBeCloseTo(0);
+  });
+});
+
+describe('kilometers and feet', () => {
+  it('should convert kilometers to feet', () => {
+    expect(kilometersToFeet(1)).toBeCloseTo(3280.84);
+    expect(kilometersToFeet(5)).toBeCloseTo(16404.2);
+    expect(kilometersToFeet(0)).toBeCloseTo(0);
+  });
+
+  it('should convert feet to kilometers', () => {
+    expect(feetToKilometers(3280.84)).toBeCloseTo(1);
+    expect(feetToKilometers(16404.2)).toBeCloseTo(5);
+    expect(feetToKilometers(0)).toBeCloseTo(0);
   });
 });
 
