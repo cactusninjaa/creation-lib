@@ -6,7 +6,7 @@ import {
   yardsToFeet, feetToYards,
   kilometersToYards, yardsToKilometers ,
   kilometersToFeet, feetToKilometers
-} from './length';
+} from '../src/converters/length';
 
 describe('feet and meters', () => {
   it('should convert meters to feet', () => {

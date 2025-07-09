@@ -7,7 +7,7 @@ import {
     fahrenheitToCelsius,
     kelvinToFahrenheit,
     fahrenheitToKelvin,
-} from './temperature';
+} from '../src/converters/temperature';
 
 describe('Conversion de températures', () => {
     test('Celsius à Kelvin', () => {
