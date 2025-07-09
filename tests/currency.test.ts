@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { convert } from './currency';
+import { convert } from '../src/converters/currency';
 
 const sampleRates = {
   USD: 1.08,
