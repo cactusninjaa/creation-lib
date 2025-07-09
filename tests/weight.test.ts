@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import * as weight from './weight';
+import * as weight from '../src/converters/weight';
 
 describe('Weight conversions', () => {
   describe('Metric ↔ Metric', () => {

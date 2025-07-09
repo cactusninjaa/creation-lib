@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import * as volume from './volume';
+import * as volume from '../src/converters/volume';
 
 describe('Volume conversions', () => {
   describe('Metric ↔ Metric', () => {

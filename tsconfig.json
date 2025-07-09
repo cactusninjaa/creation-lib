@@ -7,5 +7,5 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["src"]
+  "include": ["src", "tests/weight.test.ts", "tests/volume.test.ts", "tests/length.test.ts", "tests/currency.test.ts"]
 }
